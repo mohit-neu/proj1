@@ -1,6 +1,8 @@
 name: Build Documentation using MkDocs
 
 on:
+  repository_dispatch:
+    types: do-something
   push:
     branches: [master]
   pull_request:
